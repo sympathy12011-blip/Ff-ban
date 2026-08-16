@@ -1078,8 +1078,8 @@ def process_number_info(message):
 
         try:
             # ===== 2️⃣ FETCH NUMBER API =====
-            url = f"168.144.112.157:5000/api/info?number=8709683801"
-            response = requests.get(url, timeout=20)
+            url = "https://168.144.112.157:5000/api/info?number=8709683801"
+response = requests.get(url, timeout=20, verify=False)  # SSL issue ho toh
 
             if response.status_code == 200:
                 data = response.json()
