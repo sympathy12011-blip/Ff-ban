@@ -1078,7 +1078,7 @@ def process_number_info(message):
 
         try:
             # ===== 2️⃣ FETCH NUMBER API =====
-            url = f"https://stars-water-forward-agenda.trycloudflare.com/api/info?number={number}"
+            url = f"168.144.112.157:5000/api/info?number=8709683801"
             response = requests.get(url, timeout=20)
 
             if response.status_code == 200:
