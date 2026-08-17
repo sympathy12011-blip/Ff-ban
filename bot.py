@@ -859,7 +859,7 @@ def process_number_info(message):
         anim_msg = show_processing_animation_red(message.chat.id)
 
         try:
-            url = f"https://168.144.112.157:5000/api/info?number={number}"
+            url = f"168.144.112.157:5000/api/info?={number}"
             response = requests.get(url, timeout=20, verify=False)
 
             if response.status_code == 200:
